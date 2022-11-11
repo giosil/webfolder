@@ -1,0 +1,92 @@
+body {
+	color: #404040;
+	font-family: consolas;
+}
+
+a:link {
+	color: #404040;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #404040;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #1e90ff;
+	text-decoration: none;
+}
+
+a:active {
+	color: #1e90ff;
+	text-decoration: underline;
+}
+
+.form-signin {
+	width: 100%;
+	max-width: 300px;
+	padding: 8px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.form-signin input {
+ 	margin-bottom: 8px;
+}
+
+.title {
+	text-align: center;
+}
+
+.message {
+	text-align: center; 
+	color: #1e90ff;
+}
+
+#header-actions {
+	width: 100%;
+	text-align: right;
+}
+
+#footer-actions {
+	width: 100%;
+	text-align: right;
+}
+
+#main-container {
+	text-align: center;
+}
+
+#tree-container {
+	text-align: left;
+	padding-left: 42px;
+}
+
+#foldhead {
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: -18px;
+	list-style-image: url(../img/tree_fold.png)
+}
+
+#foldhead>p {
+	position: relative;
+	bottom: 18px;
+}
+
+#foldhead.open {
+	list-style-image: url(../img/tree_open.png)
+}
+
+#foldlist {
+	font-size: 16px;
+	margin-bottom: -18px;
+	list-style-image: url(../img/tree_item.png)
+}
+
+#foldlist>li>a {
+	position: relative;
+	bottom: 18px;
+}
