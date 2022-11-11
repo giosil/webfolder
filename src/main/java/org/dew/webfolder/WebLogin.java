@@ -93,10 +93,6 @@ class WebLogin extends HttpServlet
     
     User user = null;
     
-    if(username.equalsIgnoreCase("guest") && password.equalsIgnoreCase("guest")) {
-      return new User(username, "guest");
-    }
-    
     IUserService userService = WebLogin.getUserService();
     
     String role = userService.login(username, password);
@@ -131,7 +127,7 @@ class WebLogin extends HttpServlet
   IUserService getUserService()
   {
     if(userService == null) {
-      userService = new LDAPUserService();
+      userService = new DefaultUserService();
     }
     
     return userService;

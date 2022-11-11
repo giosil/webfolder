@@ -11,9 +11,9 @@ import javax.naming.ldap.InitialLdapContext;
 public 
 class LDAPUserService implements IUserService
 {
-  protected static final String LDAP_PROVIDER     = "ldap://ldap.dew.org:389";
+  protected static final String LDAP_PROVIDER     = "ldap://localhost:389";
   protected static final String DOMAIN_CONTROLLER = "DC=ad,DC=dew,DC=org";
-  protected static final String ADMIN_DN          = "CN=User.ldap,OU=dew," + DOMAIN_CONTROLLER;
+  protected static final String ADMIN_DN          = "CN=User.ldap,OU=users," + DOMAIN_CONTROLLER;
   protected static final String ADMIN_PASS        = "password";
   protected static final int    SEARCH_SCOPE      = SearchControls.SUBTREE_SCOPE;
 
