@@ -2,10 +2,11 @@
 
 Application to view the content of a folder on a web page.
 
-At login page type username (folder name) e password (same username) to view $user.home/username folder.
+On the login page enter username (folder name) e password (equals to username) to view $user.home/username folder.
 
 ## Build
 
+- `git clone https://github.com/giosil/webfolder.git`
 - `mvn clean install`
 
 ## Contributors
