@@ -90,3 +90,19 @@ a:active {
 	position: relative;
 	bottom: 18px;
 }
+
+@-moz-document url-prefix() {
+	#tree-container {
+		padding-top: 8px;
+	}
+	#foldhead {
+		margin-bottom: 0px;
+		height: 16px;
+	}
+	#foldhead>p {
+		margin-top: 32px;
+	}
+	#foldlist {
+		margin-bottom: 0px;
+	}
+}
